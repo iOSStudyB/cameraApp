@@ -21,6 +21,8 @@
 		63FEC31718F4002200A75883 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63FEC2F918F4002100A75883 /* UIKit.framework */; };
 		63FEC31F18F4002200A75883 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 63FEC31D18F4002200A75883 /* InfoPlist.strings */; };
 		63FEC32118F4002200A75883 /* CameraAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FEC32018F4002200A75883 /* CameraAppTests.m */; };
+		B880413118F8EC8800FA7FBE /* BCAMessageEditView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B880413018F8EC8800FA7FBE /* BCAMessageEditView.xib */; };
+		B880413418F8F02900FA7FBE /* BCAMessageEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B880413318F8F02900FA7FBE /* BCAMessageEditViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		63FEC31C18F4002200A75883 /* CameraAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CameraAppTests-Info.plist"; sourceTree = "<group>"; };
 		63FEC31E18F4002200A75883 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		63FEC32018F4002200A75883 /* CameraAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraAppTests.m; sourceTree = "<group>"; };
+		B880413018F8EC8800FA7FBE /* BCAMessageEditView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BCAMessageEditView.xib; path = ../BCAMessageEditView.xib; sourceTree = "<group>"; };
+		B880413218F8F02900FA7FBE /* BCAMessageEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCAMessageEditViewController.h; sourceTree = "<group>"; };
+		B880413318F8F02900FA7FBE /* BCAMessageEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCAMessageEditViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,11 +119,14 @@
 			children = (
 				63FEC30418F4002100A75883 /* BCAAppDelegate.h */,
 				63FEC30518F4002100A75883 /* BCAAppDelegate.m */,
+				B880413018F8EC8800FA7FBE /* BCAMessageEditView.xib */,
 				63FEC30718F4002100A75883 /* Main.storyboard */,
 				63FEC30A18F4002100A75883 /* BCAViewController.h */,
 				63FEC30B18F4002100A75883 /* BCAViewController.m */,
 				63FEC30D18F4002200A75883 /* Images.xcassets */,
 				63FEC2FC18F4002100A75883 /* Supporting Files */,
+				B880413218F8F02900FA7FBE /* BCAMessageEditViewController.h */,
+				B880413318F8F02900FA7FBE /* BCAMessageEditViewController.m */,
 			);
 			path = CameraApp;
 			sourceTree = "<group>";
@@ -232,6 +240,7 @@
 				63FEC30E18F4002200A75883 /* Images.xcassets in Resources */,
 				63FEC30018F4002100A75883 /* InfoPlist.strings in Resources */,
 				63FEC30918F4002100A75883 /* Main.storyboard in Resources */,
+				B880413118F8EC8800FA7FBE /* BCAMessageEditView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63FEC30218F4002100A75883 /* main.m in Sources */,
+				B880413418F8F02900FA7FBE /* BCAMessageEditViewController.m in Sources */,
 				63FEC30618F4002100A75883 /* BCAAppDelegate.m in Sources */,
 				63FEC30C18F4002100A75883 /* BCAViewController.m in Sources */,
 			);
@@ -457,6 +467,7 @@
 				63FEC32618F4002200A75883 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		63FEC32718F4002200A75883 /* Build configuration list for PBXNativeTarget "CameraAppTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +476,7 @@
 				63FEC32918F4002200A75883 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

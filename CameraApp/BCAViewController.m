@@ -7,6 +7,7 @@
 //
 
 #import "BCAViewController.h"
+#import "BCAMessageEditViewController.h"
 
 @interface BCAViewController ()
 
@@ -24,6 +25,25 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)pushPostButton:(id)sender {
+    BCAMessageEditViewController *editView = [[BCAMessageEditViewController alloc] initWithNibName:@"BCAMessageEditView" bundle:nil];
+//    [editView set]
+    [self presentViewController:editView animated:YES completion:^{
+    }];
+    
+}
+
+#pragma mark MessageEditView のデリゲートメソッド
+- (void) didPostMessage:(NSString *)messages sender:(id)sender
+{
+    
+}
+- (void) didCancel:(id)sender
+{
+    [self dismissViewControllerAnimated:YES
+completion:^{}];
 }
 
 @end

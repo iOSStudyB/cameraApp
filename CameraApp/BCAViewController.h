@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BCAMessageEditViewController.h"
 
-@interface BCAViewController : UIViewController
+@interface BCAViewController : UIViewController <BCAMessageEditViewDelegate>
 
+@property (weak, nonatomic) IBOutlet UIButton *postButton;
+- (IBAction)pushPostButton:(id)sender;
 @end
