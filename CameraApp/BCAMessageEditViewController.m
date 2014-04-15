@@ -14,6 +14,8 @@
 
 @implementation BCAMessageEditViewController
 
+NSInteger countDown;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -70,13 +72,37 @@
     
     [hud setLabelText:@"接続中"];// ラベル設定.
 
+    // 3秒間 ウエイト（疑似接続中）
+
+    // タイマーの生成
+    NSTimer *tm =[NSTimer
+        scheduledTimerWithTimeInterval:1.0f
+        target:self
+        selector:@selector(timerAction:)
+        userInfo:nil
+        repeats:YES
+    ];
     
-    // TODO Saveボタンを押下した時の動作を定義する
-//    [self dismissViewControllerAnimated:YES
-//                             completion:^{
-//
-//                             }];
+    // カウントダウン時間の設定
+    countDown = 3;
     
+    [tm fire];
+    
+}
+
+-(void)timerAction:(NSTimer*)timer{
+    if(countDown>0){
+        countDown--;
+    }else{
+        [timer invalidate]; // タイマーを停止する
+        NSLog(@"---------タイムオーバ-----------");
+        
+        // 画面を戻す処理
+        [self dismissViewControllerAnimated:YES
+                                 completion:^{
+                                     
+                                 }];
+    }
 }
 
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
