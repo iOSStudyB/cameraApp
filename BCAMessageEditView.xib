@@ -37,7 +37,11 @@
                                 <action selector="touchCancelItem:" destination="-1" id="GMv-mb-PBl"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem systemItem="save" id="5KN-a2-MtJ"/>
+                        <barButtonItem systemItem="save" id="5KN-a2-MtJ">
+                            <connections>
+                                <action selector="touchSaveItem:" destination="-1" id="Wj4-gb-fdz"/>
+                            </connections>
+                        </barButtonItem>
                     </items>
                 </toolbar>
             </subviews>
