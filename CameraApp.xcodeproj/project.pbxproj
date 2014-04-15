@@ -135,6 +135,7 @@
 		63FEC2FB18F4002100A75883 /* CameraApp */ = {
 			isa = PBXGroup;
 			children = (
+				B880413518FD588D00FA7FBE /* iPad */,
 				63FEC30418F4002100A75883 /* BCAAppDelegate.h */,
 				63FEC30518F4002100A75883 /* BCAAppDelegate.m */,
 				B880413018F8EC8800FA7FBE /* BCAMessageEditView.xib */,
@@ -176,6 +177,13 @@
 				63FEC31D18F4002200A75883 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B880413518FD588D00FA7FBE /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = iPad;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -408,7 +416,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CameraApp/CameraApp-Prefix.pch";
 				INFOPLIST_FILE = "CameraApp/CameraApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -421,7 +431,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CameraApp/CameraApp-Prefix.pch";
 				INFOPLIST_FILE = "CameraApp/CameraApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
