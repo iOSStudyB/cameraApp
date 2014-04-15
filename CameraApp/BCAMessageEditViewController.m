@@ -71,26 +71,77 @@
 
 }
 
+- (IBAction)touchSaveItem:(UIBarButtonItem *)sender {
+    // TODO Saveボタンを押下した時の動作を定義する
+    [self dismissViewControllerAnimated:YES
+                             completion:^{
+                                 
+                             }];
+
+}
+
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
 {
-    NSLog(@"You have pressed the %@ button", [actionSheet buttonTitleAtIndex:buttonIndex]);
-    if (buttonIndex == 0) {
+    NSLog(@"You have pressed the %@ button %d", [actionSheet buttonTitleAtIndex:buttonIndex], buttonIndex);
+    if (buttonIndex == actionSheet.cancelButtonIndex) {
         return;
     }
     // カメラを利用できるかどうかチェックする
-    if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera])
-    {
-        // イメージピッカーコントローラを作る
-        UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
-        //UIImagePickerControllerDelegate のデリゲートになる
-        imagePicker.delegate = self;
-        // カメラから画像を取り込む設定にする
-        imagePicker.sourceType = UIImagePickerControllerSourceTypeCamera;
-        imagePicker.allowsEditing = YES;//NO だとプレビューのみ
-        
-        // カメラを表示する
-        [self presentViewController:imagePicker animated:YES completion:nil];
+    if (buttonIndex == 0) {
+        if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera])
+        {
+            // イメージピッカーコントローラを作る
+            UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
+            //UIImagePickerControllerDelegate のデリゲートになる
+            imagePicker.delegate = self;
+            // カメラから画像を取り込む設定にする
+            imagePicker.sourceType = UIImagePickerControllerSourceTypeCamera;
+            imagePicker.allowsEditing = YES;//NO だとプレビューのみ
+            
+            // カメラを表示する
+            [self presentViewController:imagePicker animated:YES completion:nil];
+        }
+    } else if (buttonIndex == 1) {// ライブラリから取得
+        // フォトライブラリを利用できるかどうかチェックする
+        if([UIImagePickerController isSourceTypeAvailable:
+            UIImagePickerControllerSourceTypePhotoLibrary]) {
+            // イメージピッカーコントローラを作る
+            UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
+            //UIImagePickerControllerDelegate のデリゲートになる
+            imagePicker.delegate = self;
+            imagePicker.allowsEditing = YES;
+            // フォトライブラリから画像を取り込む設定にする
+            imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+            // フォトライブラリから画像を選ぶ
+            [self presentViewController:imagePicker animated:YES completion:nil];
+        }
     }
-    // TODO UIImagePickerControllerのデリゲートメソッド実装
 }
+
+// カメラを使った場合
+-(void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
+{
+    // オリジナル画像
+    UIImage *originalImage = (UIImage *)[info objectForKey:UIImagePickerControllerOriginalImage];
+    // 編集済み画像
+    UIImage *editedImage = (UIImage *)[info objectForKey:UIImagePickerControllerEditedImage];
+    // 最初の画面のイメージビューに編集済み画像を表示する
+    // 可能であればtext view への埋め込み
+    // 参考: http://blog.koogawa.com/entry/2013/12/24/202247
+    _imageView.image = editedImage;
+    // 編集済み画像をカメラロールに保存する
+    UIImageWriteToSavedPhotosAlbum(editedImage, nil, nil, nil);
+    // オリジナル画像もカメラロールに保存する
+    UIImageWriteToSavedPhotosAlbum(originalImage, nil, nil, nil);
+    // 最初の画面に戻る
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+//「Cancel」ボタンのデリゲートメソッド
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
+{
+    // 最初の画面に戻る
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 @end
