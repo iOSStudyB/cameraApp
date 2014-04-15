@@ -36,6 +36,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6353622918FD3BEF000DC753 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		6353622A18FD3BEF000DC753 /* MBProgressHUD-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
+		6353622B18FD3BEF000DC753 /* MBProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		6353622C18FD3BEF000DC753 /* MBProgressHUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		6353622D18FD3BEF000DC753 /* README.mdown */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.mdown; sourceTree = "<group>"; };
 		63FEC2F218F4002100A75883 /* CameraApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CameraApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63FEC2F518F4002100A75883 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		63FEC2F718F4002100A75883 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -84,9 +89,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6353622818FD3BEF000DC753 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				6353622918FD3BEF000DC753 /* LICENSE */,
+				6353622A18FD3BEF000DC753 /* MBProgressHUD-Prefix.pch */,
+				6353622B18FD3BEF000DC753 /* MBProgressHUD.h */,
+				6353622C18FD3BEF000DC753 /* MBProgressHUD.m */,
+				6353622D18FD3BEF000DC753 /* README.mdown */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
 		63FEC2E918F4002100A75883 = {
 			isa = PBXGroup;
 			children = (
+				6353622818FD3BEF000DC753 /* MBProgressHUD */,
 				63FEC2FB18F4002100A75883 /* CameraApp */,
 				63FEC31A18F4002200A75883 /* CameraAppTests */,
 				63FEC2F418F4002100A75883 /* Frameworks */,
