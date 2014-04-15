@@ -62,22 +62,21 @@
     [sheet showInView:self.view];
     
 }
+
 - (IBAction)touchSaveItem:(UIBarButtonItem *)sender {
     MBProgressHUD*	hud	= [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     
     hud.dimBackground = YES;
-
+    
     [hud setLabelText:@"接続中"];// ラベル設定.
 
-}
-
-- (IBAction)touchSaveItem:(UIBarButtonItem *)sender {
+    
     // TODO Saveボタンを押下した時の動作を定義する
-    [self dismissViewControllerAnimated:YES
-                             completion:^{
-                                 
-                             }];
-
+//    [self dismissViewControllerAnimated:YES
+//                             completion:^{
+//
+//                             }];
+    
 }
 
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
