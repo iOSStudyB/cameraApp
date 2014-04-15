@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6351589718FD8DA400931DA1 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 6353622C18FD3BEF000DC753 /* MBProgressHUD.m */; };
 		63FEC2F618F4002100A75883 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63FEC2F518F4002100A75883 /* Foundation.framework */; };
 		63FEC2F818F4002100A75883 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63FEC2F718F4002100A75883 /* CoreGraphics.framework */; };
 		63FEC2FA18F4002100A75883 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63FEC2F918F4002100A75883 /* UIKit.framework */; };
@@ -277,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6351589718FD8DA400931DA1 /* MBProgressHUD.m in Sources */,
 				63FEC30218F4002100A75883 /* main.m in Sources */,
 				B880413418F8F02900FA7FBE /* BCAMessageEditViewController.m in Sources */,
 				63FEC30618F4002100A75883 /* BCAAppDelegate.m in Sources */,

@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+// import progress library
+#include "MBProgressHUD.h"
+
 @interface BCAMessageEditViewController : UIViewController<UINavigationControllerDelegate, UIImagePickerControllerDelegate, UIActionSheetDelegate>
 - (IBAction)touchCancelItem:(UIBarButtonItem *)sender;
 - (IBAction)touchCameraItem:(UIBarButtonItem *)sender;

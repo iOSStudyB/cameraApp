@@ -63,7 +63,12 @@
     
 }
 - (IBAction)touchSaveItem:(UIBarButtonItem *)sender {
+    MBProgressHUD*	hud	= [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     
+    hud.dimBackground = YES;
+
+    [hud setLabelText:@"接続中"];// ラベル設定.
+
 }
 
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
