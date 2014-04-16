@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface BCAMessageEditViewController : UIViewController<UINavigationControllerDelegate, UIImagePickerControllerDelegate, UIActionSheetDelegate>
+
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 - (IBAction)touchCancelItem:(UIBarButtonItem *)sender;
 - (IBAction)touchCameraItem:(UIBarButtonItem *)sender;

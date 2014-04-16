@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "BCAMessageEditViewController.h"
+#import "MBProgressHUD.h"
 
-@interface BCAViewController : UIViewController <BCAMessageEditViewDelegate>
+@interface BCAViewController : UIViewController <BCAMessageEditViewDelegate,MBProgressHUDDelegate>
+{
+    MBProgressHUD *_progress ;
+}
 
 @property (weak, nonatomic) IBOutlet UIButton *postButton;
 - (IBAction)pushPostButton:(id)sender;

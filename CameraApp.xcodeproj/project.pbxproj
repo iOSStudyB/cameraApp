@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18126C4118FDDA420058AEF5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18126C4018FDDA420058AEF5 /* SystemConfiguration.framework */; };
+		18126C4318FDDA610058AEF5 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18126C4218FDDA610058AEF5 /* Security.framework */; };
 		63FEC2F618F4002100A75883 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63FEC2F518F4002100A75883 /* Foundation.framework */; };
 		63FEC2F818F4002100A75883 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63FEC2F718F4002100A75883 /* CoreGraphics.framework */; };
 		63FEC2FA18F4002100A75883 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63FEC2F918F4002100A75883 /* UIKit.framework */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18126C4018FDDA420058AEF5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		18126C4218FDDA610058AEF5 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		6353622918FD3BEF000DC753 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		6353622A18FD3BEF000DC753 /* MBProgressHUD-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
 		6353622B18FD3BEF000DC753 /* MBProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
@@ -70,6 +74,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18126C4318FDDA610058AEF5 /* Security.framework in Frameworks */,
+				18126C4118FDDA420058AEF5 /* SystemConfiguration.framework in Frameworks */,
 				63FEC2F818F4002100A75883 /* CoreGraphics.framework in Frameworks */,
 				63FEC2FA18F4002100A75883 /* UIKit.framework in Frameworks */,
 				63FEC2F618F4002100A75883 /* Foundation.framework in Frameworks */,
@@ -124,6 +130,8 @@
 		63FEC2F418F4002100A75883 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				18126C4218FDDA610058AEF5 /* Security.framework */,
+				18126C4018FDDA420058AEF5 /* SystemConfiguration.framework */,
 				63FEC2F518F4002100A75883 /* Foundation.framework */,
 				63FEC2F718F4002100A75883 /* CoreGraphics.framework */,
 				63FEC2F918F4002100A75883 /* UIKit.framework */,
