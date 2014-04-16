@@ -5,7 +5,7 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>857B9186-A2C7-4D78-A1E0-47642028349B</string>
+	<string>DF3E9FB3-30DA-4F1A-B76E-689D3EF61E7B</string>
 	<key>IDESourceControlProjectName</key>
 	<string>CameraApp</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
@@ -14,11 +14,11 @@
 		<string>ssh://github.com/iOSStudyB/cameraApp.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>CameraApp/CameraApp.xcodeproj/project.xcworkspace</string>
+	<string>CameraApp.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>29868761-DDBD-4213-8AF0-2A56724B9D48</key>
-		<string>../../..</string>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>ssh://github.com/iOSStudyB/cameraApp.git</string>

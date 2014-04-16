@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+// import progress library
+#include "MBProgressHUD.h"
+
 @interface BCAMessageEditViewController : UIViewController<UINavigationControllerDelegate, UIImagePickerControllerDelegate, UIActionSheetDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
