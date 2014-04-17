@@ -7,7 +7,6 @@
 //
 
 #import "BCAMessageEditViewController.h"
-#import <DLCImagePickerController.h>
 
 @interface BCAMessageEditViewController ()
 
