@@ -10,8 +10,9 @@
 
 // import progress library
 #include "MBProgressHUD.h"
+#include <DLCImagePickerController.h>
 
-@interface BCAMessageEditViewController : UIViewController<UINavigationControllerDelegate, UIImagePickerControllerDelegate, UIActionSheetDelegate>
+@interface BCAMessageEditViewController : UIViewController<UINavigationControllerDelegate, UIImagePickerControllerDelegate, UIActionSheetDelegate, DLCImagePickerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 - (IBAction)touchCancelItem:(UIBarButtonItem *)sender;
