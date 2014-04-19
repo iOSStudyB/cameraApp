@@ -13,6 +13,9 @@
 @end
 
 @implementation BCAMessageEditViewController
+{
+    UIImage *tempEditedImage;
+}
 
 NSInteger countDown;
 
@@ -66,6 +69,11 @@ NSInteger countDown;
 }
 
 - (IBAction)touchSaveItem:(UIBarButtonItem *)sender {
+    // 編集済み画像をカメラロールに保存する
+    if (tempEditedImage != nil) {
+        UIImageWriteToSavedPhotosAlbum(tempEditedImage, nil, nil, nil);
+    }
+
     MBProgressHUD*	hud	= [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     
     hud.dimBackground = YES;
@@ -146,18 +154,13 @@ NSInteger countDown;
 // カメラを使った場合
 -(void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
-    // オリジナル画像
-    UIImage *originalImage = (UIImage *)[info objectForKey:UIImagePickerControllerOriginalImage];
     // 編集済み画像
     UIImage *editedImage = (UIImage *)[info objectForKey:UIImagePickerControllerEditedImage];
     // 最初の画面のイメージビューに編集済み画像を表示する
     // 可能であればtext view への埋め込み
     // 参考: http://blog.koogawa.com/entry/2013/12/24/202247
     _imageView.image = editedImage;
-    // 編集済み画像をカメラロールに保存する
-    UIImageWriteToSavedPhotosAlbum(editedImage, nil, nil, nil);
-    // オリジナル画像もカメラロールに保存する
-    UIImageWriteToSavedPhotosAlbum(originalImage, nil, nil, nil);
+    tempEditedImage = editedImage;
     // 最初の画面に戻る
     [self dismissViewControllerAnimated:YES completion:nil];
 }
