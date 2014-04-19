@@ -159,8 +159,11 @@ NSInteger countDown;
 // カメラを使った場合
 -(void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
+    UIImage *editedImage = [UIImage imageWithData:info[@"data"]];
     // 編集済み画像
-    UIImage *editedImage = (UIImage *)[info objectForKey:UIImagePickerControllerEditedImage];
+        if (!editedImage) {
+            editedImage = [info objectForKey:UIImagePickerControllerEditedImage];
+        }
     // 最初の画面のイメージビューに編集済み画像を表示する
     // 可能であればtext view への埋め込み
     // 参考: http://blog.koogawa.com/entry/2013/12/24/202247
@@ -181,22 +184,5 @@ NSInteger countDown;
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-//// ★下記のメソッドがうまく実装できな。。。★
-//// 編集可能カメラ（DLCImagePickerController）を使った場合
-//- (void)imagePickerController:(DLCImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
-//{
-//    // 画像データは info[@"data"] にNSDataオブジェクトとして格納されている
-//    UIImage *image = [UIImage imageWithData:info[@"data"]];
-//    
-//    // UIImagePickerControllerも併用するのであればUIImagePickerControllerOriginalImage等にフォールバックする
-//    if (!image) {
-//        image = [info objectForKey:UIImagePickerControllerOriginalImage];
-//    }
-//    
-//    _imageView.image = image;
-//    tempEditedImage = image;
-//    // 最初の画面に戻る
-//    [self dismissViewControllerAnimated:YES completion:nil];
-//}
 
 @end
