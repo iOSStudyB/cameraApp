@@ -9,6 +9,7 @@
 #import "BCAMessageEditViewController.h"
 
 @interface BCAMessageEditViewController ()
+@property (weak, nonatomic) IBOutlet UITextView *textView;
 
 @end
 
@@ -163,6 +164,10 @@ NSInteger countDown;
     // 最初の画面のイメージビューに編集済み画像を表示する
     // 可能であればtext view への埋め込み
     // 参考: http://blog.koogawa.com/entry/2013/12/24/202247
+    CGRect exclusionRect = CGRectMake(20, 145, _imageView.frame.size.width, _imageView.frame.size.height);
+    UIBezierPath *path = [UIBezierPath bezierPathWithRect:exclusionRect];
+    // テキストビューに設定
+    _textView.textContainer.exclusionPaths = @[path];
     _imageView.image = editedImage;
     tempEditedImage = editedImage;
     // 最初の画面に戻る
