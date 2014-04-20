@@ -75,11 +75,8 @@ NSInteger countDown;
         UIImageWriteToSavedPhotosAlbum(tempEditedImage, nil, nil, nil);
     }
 
-    MBProgressHUD*	hud	= [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    
-    hud.dimBackground = YES;
-    
-    [hud setLabelText:@"接続中"];// ラベル設定.
+    // 処理中イメージ表示
+    [MRProgressOverlayView showOverlayAddedTo:self.view.window animated:YES];
 
     // 3秒間 ウエイト（疑似接続中）
 
@@ -106,6 +103,9 @@ NSInteger countDown;
         [timer invalidate]; // タイマーを停止する
         NSLog(@"---------タイムオーバ-----------");
         
+        //処理中イメージを戻す
+        [MRProgressOverlayView dismissOverlayForView:self.view.window animated:YES];
+
         // 画面を戻す処理
         [self dismissViewControllerAnimated:YES
                                  completion:^{

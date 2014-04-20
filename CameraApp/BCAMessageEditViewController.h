@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 // import progress library
-#include "MBProgressHUD.h"
+#import "MRProgress.h"
 #include <DLCImagePickerController.h>
 
 @interface BCAMessageEditViewController : UIViewController<UINavigationControllerDelegate, UIImagePickerControllerDelegate, UIActionSheetDelegate, DLCImagePickerDelegate>
