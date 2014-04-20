@@ -1,1289 +1,524 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>18126C4018FDDA420058AEF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>SystemConfiguration.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/SystemConfiguration.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>18126C4118FDDA420058AEF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>18126C4018FDDA420058AEF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>18126C4218FDDA610058AEF5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Security.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/Security.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>18126C4318FDDA610058AEF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>18126C4218FDDA610058AEF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>18126C4418FE31070058AEF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6353622C18FD3BEF000DC753</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>2AC6E3311AC84403B331878E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Pods.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2C0FAD719ABB42D79EDD882D</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>45D88CCE1D4A4FFDBF24C627</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>4D86D07197B5430D87C33FCC</key>
-		<dict>
-			<key>fileRef</key>
-			<string>2C0FAD719ABB42D79EDD882D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>504B8846C62440D38D7F5190</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Pods-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>6353622818FD3BEF000DC753</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>6353622918FD3BEF000DC753</string>
-				<string>6353622A18FD3BEF000DC753</string>
-				<string>6353622B18FD3BEF000DC753</string>
-				<string>6353622C18FD3BEF000DC753</string>
-				<string>6353622D18FD3BEF000DC753</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>MBProgressHUD</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6353622918FD3BEF000DC753</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>LICENSE</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6353622A18FD3BEF000DC753</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>MBProgressHUD-Prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6353622B18FD3BEF000DC753</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>MBProgressHUD.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6353622C18FD3BEF000DC753</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>MBProgressHUD.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6353622D18FD3BEF000DC753</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>README.mdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>63FEC2E918F4002100A75883</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>6353622818FD3BEF000DC753</string>
-				<string>63FEC2FB18F4002100A75883</string>
-				<string>63FEC31A18F4002200A75883</string>
-				<string>63FEC2F418F4002100A75883</string>
-				<string>63FEC2F318F4002100A75883</string>
-				<string>2AC6E3311AC84403B331878E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>63FEC2EA18F4002100A75883</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>CLASSPREFIX</key>
-				<string>BCA</string>
-				<key>LastUpgradeCheck</key>
-				<string>0510</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>Hermit Knight</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>63FEC31218F4002200A75883</key>
-					<dict>
-						<key>TestTargetID</key>
-						<string>63FEC2F118F4002100A75883</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>63FEC2ED18F4002100A75883</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>63FEC2E918F4002100A75883</string>
-			<key>productRefGroup</key>
-			<string>63FEC2F318F4002100A75883</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>63FEC2F118F4002100A75883</string>
-				<string>63FEC31218F4002200A75883</string>
-			</array>
-		</dict>
-		<key>63FEC2ED18F4002100A75883</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>63FEC32218F4002200A75883</string>
-				<string>63FEC32318F4002200A75883</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>63FEC2EE18F4002100A75883</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>18126C4418FE31070058AEF5</string>
-				<string>63FEC30218F4002100A75883</string>
-				<string>B880413418F8F02900FA7FBE</string>
-				<string>63FEC30618F4002100A75883</string>
-				<string>63FEC30C18F4002100A75883</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>63FEC2EF18F4002100A75883</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>18126C4318FDDA610058AEF5</string>
-				<string>18126C4118FDDA420058AEF5</string>
-				<string>63FEC2F818F4002100A75883</string>
-				<string>63FEC2FA18F4002100A75883</string>
-				<string>63FEC2F618F4002100A75883</string>
-				<string>4D86D07197B5430D87C33FCC</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>63FEC2F018F4002100A75883</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>63FEC30E18F4002200A75883</string>
-				<string>63FEC30018F4002100A75883</string>
-				<string>63FEC30918F4002100A75883</string>
-				<string>B880413118F8EC8800FA7FBE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>63FEC2F118F4002100A75883</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>63FEC32418F4002200A75883</string>
-			<key>buildPhases</key>
-			<array>
-				<string>45D88CCE1D4A4FFDBF24C627</string>
-				<string>63FEC2EE18F4002100A75883</string>
-				<string>63FEC2EF18F4002100A75883</string>
-				<string>63FEC2F018F4002100A75883</string>
-				<string>504B8846C62440D38D7F5190</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>CameraApp</string>
-			<key>productName</key>
-			<string>CameraApp</string>
-			<key>productReference</key>
-			<string>63FEC2F218F4002100A75883</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>63FEC2F218F4002100A75883</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>CameraApp.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>63FEC2F318F4002100A75883</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>63FEC2F218F4002100A75883</string>
-				<string>63FEC31318F4002200A75883</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>63FEC2F418F4002100A75883</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>18126C4218FDDA610058AEF5</string>
-				<string>18126C4018FDDA420058AEF5</string>
-				<string>63FEC2F518F4002100A75883</string>
-				<string>63FEC2F718F4002100A75883</string>
-				<string>63FEC2F918F4002100A75883</string>
-				<string>63FEC31418F4002200A75883</string>
-				<string>2C0FAD719ABB42D79EDD882D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>63FEC2F518F4002100A75883</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>63FEC2F618F4002100A75883</key>
-		<dict>
-			<key>fileRef</key>
-			<string>63FEC2F518F4002100A75883</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>63FEC2F718F4002100A75883</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>CoreGraphics.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/CoreGraphics.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>63FEC2F818F4002100A75883</key>
-		<dict>
-			<key>fileRef</key>
-			<string>63FEC2F718F4002100A75883</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>63FEC2F918F4002100A75883</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>UIKit.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/UIKit.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>63FEC2FA18F4002100A75883</key>
-		<dict>
-			<key>fileRef</key>
-			<string>63FEC2F918F4002100A75883</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>63FEC2FB18F4002100A75883</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>B880413518FD588D00FA7FBE</string>
-				<string>63FEC30418F4002100A75883</string>
-				<string>63FEC30518F4002100A75883</string>
-				<string>B880413018F8EC8800FA7FBE</string>
-				<string>63FEC30718F4002100A75883</string>
-				<string>63FEC30A18F4002100A75883</string>
-				<string>63FEC30B18F4002100A75883</string>
-				<string>63FEC30D18F4002200A75883</string>
-				<string>63FEC2FC18F4002100A75883</string>
-				<string>B880413218F8F02900FA7FBE</string>
-				<string>B880413318F8F02900FA7FBE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>CameraApp</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>63FEC2FC18F4002100A75883</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>63FEC2FD18F4002100A75883</string>
-				<string>63FEC2FE18F4002100A75883</string>
-				<string>63FEC30118F4002100A75883</string>
-				<string>63FEC30318F4002100A75883</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>63FEC2FD18F4002100A75883</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>CameraApp-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>63FEC2FE18F4002100A75883</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>63FEC2FF18F4002100A75883</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>63FEC2FF18F4002100A75883</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>63FEC30018F4002100A75883</key>
-		<dict>
-			<key>fileRef</key>
-			<string>63FEC2FE18F4002100A75883</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>63FEC30118F4002100A75883</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>main.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>63FEC30218F4002100A75883</key>
-		<dict>
-			<key>fileRef</key>
-			<string>63FEC30118F4002100A75883</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>63FEC30318F4002100A75883</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>CameraApp-Prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>63FEC30418F4002100A75883</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>BCAAppDelegate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>63FEC30518F4002100A75883</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>BCAAppDelegate.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>63FEC30618F4002100A75883</key>
-		<dict>
-			<key>fileRef</key>
-			<string>63FEC30518F4002100A75883</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>63FEC30718F4002100A75883</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>63FEC30818F4002100A75883</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>63FEC30818F4002100A75883</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>63FEC30918F4002100A75883</key>
-		<dict>
-			<key>fileRef</key>
-			<string>63FEC30718F4002100A75883</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>63FEC30A18F4002100A75883</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>BCAViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>63FEC30B18F4002100A75883</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>BCAViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>63FEC30C18F4002100A75883</key>
-		<dict>
-			<key>fileRef</key>
-			<string>63FEC30B18F4002100A75883</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>63FEC30D18F4002200A75883</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Images.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>63FEC30E18F4002200A75883</key>
-		<dict>
-			<key>fileRef</key>
-			<string>63FEC30D18F4002200A75883</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>63FEC30F18F4002200A75883</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>63FEC32118F4002200A75883</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>63FEC31018F4002200A75883</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>63FEC31518F4002200A75883</string>
-				<string>63FEC31718F4002200A75883</string>
-				<string>63FEC31618F4002200A75883</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>63FEC31118F4002200A75883</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>63FEC31F18F4002200A75883</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>63FEC31218F4002200A75883</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>63FEC32718F4002200A75883</string>
-			<key>buildPhases</key>
-			<array>
-				<string>63FEC30F18F4002200A75883</string>
-				<string>63FEC31018F4002200A75883</string>
-				<string>63FEC31118F4002200A75883</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>63FEC31918F4002200A75883</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>CameraAppTests</string>
-			<key>productName</key>
-			<string>CameraAppTests</string>
-			<key>productReference</key>
-			<string>63FEC31318F4002200A75883</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>63FEC31318F4002200A75883</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>CameraAppTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>63FEC31418F4002200A75883</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>XCTest.framework</string>
-			<key>path</key>
-			<string>Library/Frameworks/XCTest.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>63FEC31518F4002200A75883</key>
-		<dict>
-			<key>fileRef</key>
-			<string>63FEC31418F4002200A75883</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>63FEC31618F4002200A75883</key>
-		<dict>
-			<key>fileRef</key>
-			<string>63FEC2F518F4002100A75883</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>63FEC31718F4002200A75883</key>
-		<dict>
-			<key>fileRef</key>
-			<string>63FEC2F918F4002100A75883</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>63FEC31818F4002200A75883</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>63FEC2EA18F4002100A75883</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>63FEC2F118F4002100A75883</string>
-			<key>remoteInfo</key>
-			<string>CameraApp</string>
-		</dict>
-		<key>63FEC31918F4002200A75883</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>63FEC2F118F4002100A75883</string>
-			<key>targetProxy</key>
-			<string>63FEC31818F4002200A75883</string>
-		</dict>
-		<key>63FEC31A18F4002200A75883</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>63FEC32018F4002200A75883</string>
-				<string>63FEC31B18F4002200A75883</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>CameraAppTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>63FEC31B18F4002200A75883</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>63FEC31C18F4002200A75883</string>
-				<string>63FEC31D18F4002200A75883</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>63FEC31C18F4002200A75883</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>CameraAppTests-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>63FEC31D18F4002200A75883</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>63FEC31E18F4002200A75883</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>63FEC31E18F4002200A75883</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>63FEC31F18F4002200A75883</key>
-		<dict>
-			<key>fileRef</key>
-			<string>63FEC31D18F4002200A75883</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>63FEC32018F4002200A75883</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>CameraAppTests.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>63FEC32118F4002200A75883</key>
-		<dict>
-			<key>fileRef</key>
-			<string>63FEC32018F4002200A75883</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>63FEC32218F4002200A75883</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>63FEC32318F4002200A75883</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>63FEC32418F4002200A75883</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>63FEC32518F4002200A75883</string>
-				<string>63FEC32618F4002200A75883</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>63FEC32518F4002200A75883</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>2AC6E3311AC84403B331878E</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
-				<string>LaunchImage</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>CameraApp/CameraApp-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>CameraApp/CameraApp-Info.plist</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>63FEC32618F4002200A75883</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>2AC6E3311AC84403B331878E</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
-				<string>LaunchImage</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>CameraApp/CameraApp-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>CameraApp/CameraApp-Info.plist</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>63FEC32718F4002200A75883</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>63FEC32818F4002200A75883</string>
-				<string>63FEC32918F4002200A75883</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>63FEC32818F4002200A75883</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(BUILT_PRODUCTS_DIR)/CameraApp.app/CameraApp</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>CameraApp/CameraApp-Prefix.pch</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>CameraAppTests/CameraAppTests-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUNDLE_LOADER)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>xctest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>63FEC32918F4002200A75883</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(BUILT_PRODUCTS_DIR)/CameraApp.app/CameraApp</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>CameraApp/CameraApp-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>CameraAppTests/CameraAppTests-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUNDLE_LOADER)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>xctest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>B880413018F8EC8800FA7FBE</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>name</key>
-			<string>BCAMessageEditView.xib</string>
-			<key>path</key>
-			<string>../BCAMessageEditView.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B880413118F8EC8800FA7FBE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B880413018F8EC8800FA7FBE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B880413218F8F02900FA7FBE</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>BCAMessageEditViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B880413318F8F02900FA7FBE</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>BCAMessageEditViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B880413418F8F02900FA7FBE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B880413318F8F02900FA7FBE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B880413518FD588D00FA7FBE</key>
-		<dict>
-			<key>children</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>iPad</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>63FEC2EA18F4002100A75883</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18126C4118FDDA420058AEF5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18126C4018FDDA420058AEF5 /* SystemConfiguration.framework */; };
+		18126C4318FDDA610058AEF5 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18126C4218FDDA610058AEF5 /* Security.framework */; };
+		18126C4418FE31070058AEF5 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 6353622C18FD3BEF000DC753 /* MBProgressHUD.m */; };
+		63FEC2F618F4002100A75883 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63FEC2F518F4002100A75883 /* Foundation.framework */; };
+		63FEC2F818F4002100A75883 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63FEC2F718F4002100A75883 /* CoreGraphics.framework */; };
+		63FEC2FA18F4002100A75883 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63FEC2F918F4002100A75883 /* UIKit.framework */; };
+		63FEC30018F4002100A75883 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 63FEC2FE18F4002100A75883 /* InfoPlist.strings */; };
+		63FEC30218F4002100A75883 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FEC30118F4002100A75883 /* main.m */; };
+		63FEC30618F4002100A75883 /* BCAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FEC30518F4002100A75883 /* BCAAppDelegate.m */; };
+		63FEC30918F4002100A75883 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63FEC30718F4002100A75883 /* Main.storyboard */; };
+		63FEC30C18F4002100A75883 /* BCAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FEC30B18F4002100A75883 /* BCAViewController.m */; };
+		63FEC30E18F4002200A75883 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63FEC30D18F4002200A75883 /* Images.xcassets */; };
+		63FEC31518F4002200A75883 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63FEC31418F4002200A75883 /* XCTest.framework */; };
+		63FEC31618F4002200A75883 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63FEC2F518F4002100A75883 /* Foundation.framework */; };
+		63FEC31718F4002200A75883 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63FEC2F918F4002100A75883 /* UIKit.framework */; };
+		63FEC31F18F4002200A75883 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 63FEC31D18F4002200A75883 /* InfoPlist.strings */; };
+		63FEC32118F4002200A75883 /* CameraAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FEC32018F4002200A75883 /* CameraAppTests.m */; };
+		B880413118F8EC8800FA7FBE /* BCAMessageEditView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B880413018F8EC8800FA7FBE /* BCAMessageEditView.xib */; };
+		B880413418F8F02900FA7FBE /* BCAMessageEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B880413318F8F02900FA7FBE /* BCAMessageEditViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		63FEC31818F4002200A75883 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63FEC2EA18F4002100A75883 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63FEC2F118F4002100A75883;
+			remoteInfo = CameraApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18126C4018FDDA420058AEF5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		18126C4218FDDA610058AEF5 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		6353622918FD3BEF000DC753 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		6353622A18FD3BEF000DC753 /* MBProgressHUD-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
+		6353622B18FD3BEF000DC753 /* MBProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		6353622C18FD3BEF000DC753 /* MBProgressHUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		6353622D18FD3BEF000DC753 /* README.mdown */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.mdown; sourceTree = "<group>"; };
+		63FEC2F218F4002100A75883 /* CameraApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CameraApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63FEC2F518F4002100A75883 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		63FEC2F718F4002100A75883 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		63FEC2F918F4002100A75883 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		63FEC2FD18F4002100A75883 /* CameraApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CameraApp-Info.plist"; sourceTree = "<group>"; };
+		63FEC2FF18F4002100A75883 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		63FEC30118F4002100A75883 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		63FEC30318F4002100A75883 /* CameraApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CameraApp-Prefix.pch"; sourceTree = "<group>"; };
+		63FEC30418F4002100A75883 /* BCAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCAAppDelegate.h; sourceTree = "<group>"; };
+		63FEC30518F4002100A75883 /* BCAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCAAppDelegate.m; sourceTree = "<group>"; };
+		63FEC30818F4002100A75883 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		63FEC30A18F4002100A75883 /* BCAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCAViewController.h; sourceTree = "<group>"; };
+		63FEC30B18F4002100A75883 /* BCAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCAViewController.m; sourceTree = "<group>"; };
+		63FEC30D18F4002200A75883 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		63FEC31318F4002200A75883 /* CameraAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CameraAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		63FEC31418F4002200A75883 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		63FEC31C18F4002200A75883 /* CameraAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CameraAppTests-Info.plist"; sourceTree = "<group>"; };
+		63FEC31E18F4002200A75883 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		63FEC32018F4002200A75883 /* CameraAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraAppTests.m; sourceTree = "<group>"; };
+		B880413018F8EC8800FA7FBE /* BCAMessageEditView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BCAMessageEditView.xib; path = ../BCAMessageEditView.xib; sourceTree = "<group>"; };
+		B880413218F8F02900FA7FBE /* BCAMessageEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCAMessageEditViewController.h; sourceTree = "<group>"; };
+		B880413318F8F02900FA7FBE /* BCAMessageEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCAMessageEditViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		63FEC2EF18F4002100A75883 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18126C4318FDDA610058AEF5 /* Security.framework in Frameworks */,
+				18126C4118FDDA420058AEF5 /* SystemConfiguration.framework in Frameworks */,
+				63FEC2F818F4002100A75883 /* CoreGraphics.framework in Frameworks */,
+				63FEC2FA18F4002100A75883 /* UIKit.framework in Frameworks */,
+				63FEC2F618F4002100A75883 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63FEC31018F4002200A75883 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63FEC31518F4002200A75883 /* XCTest.framework in Frameworks */,
+				63FEC31718F4002200A75883 /* UIKit.framework in Frameworks */,
+				63FEC31618F4002200A75883 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6353622818FD3BEF000DC753 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				6353622918FD3BEF000DC753 /* LICENSE */,
+				6353622A18FD3BEF000DC753 /* MBProgressHUD-Prefix.pch */,
+				6353622B18FD3BEF000DC753 /* MBProgressHUD.h */,
+				6353622C18FD3BEF000DC753 /* MBProgressHUD.m */,
+				6353622D18FD3BEF000DC753 /* README.mdown */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		63FEC2E918F4002100A75883 = {
+			isa = PBXGroup;
+			children = (
+				6353622818FD3BEF000DC753 /* MBProgressHUD */,
+				63FEC2FB18F4002100A75883 /* CameraApp */,
+				63FEC31A18F4002200A75883 /* CameraAppTests */,
+				63FEC2F418F4002100A75883 /* Frameworks */,
+				63FEC2F318F4002100A75883 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		63FEC2F318F4002100A75883 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63FEC2F218F4002100A75883 /* CameraApp.app */,
+				63FEC31318F4002200A75883 /* CameraAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		63FEC2F418F4002100A75883 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18126C4218FDDA610058AEF5 /* Security.framework */,
+				18126C4018FDDA420058AEF5 /* SystemConfiguration.framework */,
+				63FEC2F518F4002100A75883 /* Foundation.framework */,
+				63FEC2F718F4002100A75883 /* CoreGraphics.framework */,
+				63FEC2F918F4002100A75883 /* UIKit.framework */,
+				63FEC31418F4002200A75883 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		63FEC2FB18F4002100A75883 /* CameraApp */ = {
+			isa = PBXGroup;
+			children = (
+				B880413518FD588D00FA7FBE /* iPad */,
+				63FEC30418F4002100A75883 /* BCAAppDelegate.h */,
+				63FEC30518F4002100A75883 /* BCAAppDelegate.m */,
+				B880413018F8EC8800FA7FBE /* BCAMessageEditView.xib */,
+				63FEC30718F4002100A75883 /* Main.storyboard */,
+				63FEC30A18F4002100A75883 /* BCAViewController.h */,
+				63FEC30B18F4002100A75883 /* BCAViewController.m */,
+				63FEC30D18F4002200A75883 /* Images.xcassets */,
+				63FEC2FC18F4002100A75883 /* Supporting Files */,
+				B880413218F8F02900FA7FBE /* BCAMessageEditViewController.h */,
+				B880413318F8F02900FA7FBE /* BCAMessageEditViewController.m */,
+			);
+			path = CameraApp;
+			sourceTree = "<group>";
+		};
+		63FEC2FC18F4002100A75883 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				63FEC2FD18F4002100A75883 /* CameraApp-Info.plist */,
+				63FEC2FE18F4002100A75883 /* InfoPlist.strings */,
+				63FEC30118F4002100A75883 /* main.m */,
+				63FEC30318F4002100A75883 /* CameraApp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		63FEC31A18F4002200A75883 /* CameraAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				63FEC32018F4002200A75883 /* CameraAppTests.m */,
+				63FEC31B18F4002200A75883 /* Supporting Files */,
+			);
+			path = CameraAppTests;
+			sourceTree = "<group>";
+		};
+		63FEC31B18F4002200A75883 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				63FEC31C18F4002200A75883 /* CameraAppTests-Info.plist */,
+				63FEC31D18F4002200A75883 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B880413518FD588D00FA7FBE /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		63FEC2F118F4002100A75883 /* CameraApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63FEC32418F4002200A75883 /* Build configuration list for PBXNativeTarget "CameraApp" */;
+			buildPhases = (
+				63FEC2EE18F4002100A75883 /* Sources */,
+				63FEC2EF18F4002100A75883 /* Frameworks */,
+				63FEC2F018F4002100A75883 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CameraApp;
+			productName = CameraApp;
+			productReference = 63FEC2F218F4002100A75883 /* CameraApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		63FEC31218F4002200A75883 /* CameraAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63FEC32718F4002200A75883 /* Build configuration list for PBXNativeTarget "CameraAppTests" */;
+			buildPhases = (
+				63FEC30F18F4002200A75883 /* Sources */,
+				63FEC31018F4002200A75883 /* Frameworks */,
+				63FEC31118F4002200A75883 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63FEC31918F4002200A75883 /* PBXTargetDependency */,
+			);
+			name = CameraAppTests;
+			productName = CameraAppTests;
+			productReference = 63FEC31318F4002200A75883 /* CameraAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		63FEC2EA18F4002100A75883 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BCA;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Hermit Knight";
+				TargetAttributes = {
+					63FEC31218F4002200A75883 = {
+						TestTargetID = 63FEC2F118F4002100A75883;
+					};
+				};
+			};
+			buildConfigurationList = 63FEC2ED18F4002100A75883 /* Build configuration list for PBXProject "CameraApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 63FEC2E918F4002100A75883;
+			productRefGroup = 63FEC2F318F4002100A75883 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				63FEC2F118F4002100A75883 /* CameraApp */,
+				63FEC31218F4002200A75883 /* CameraAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		63FEC2F018F4002100A75883 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63FEC30E18F4002200A75883 /* Images.xcassets in Resources */,
+				63FEC30018F4002100A75883 /* InfoPlist.strings in Resources */,
+				63FEC30918F4002100A75883 /* Main.storyboard in Resources */,
+				B880413118F8EC8800FA7FBE /* BCAMessageEditView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63FEC31118F4002200A75883 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63FEC31F18F4002200A75883 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		63FEC2EE18F4002100A75883 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18126C4418FE31070058AEF5 /* MBProgressHUD.m in Sources */,
+				63FEC30218F4002100A75883 /* main.m in Sources */,
+				B880413418F8F02900FA7FBE /* BCAMessageEditViewController.m in Sources */,
+				63FEC30618F4002100A75883 /* BCAAppDelegate.m in Sources */,
+				63FEC30C18F4002100A75883 /* BCAViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63FEC30F18F4002200A75883 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63FEC32118F4002200A75883 /* CameraAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		63FEC31918F4002200A75883 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63FEC2F118F4002100A75883 /* CameraApp */;
+			targetProxy = 63FEC31818F4002200A75883 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		63FEC2FE18F4002100A75883 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63FEC2FF18F4002100A75883 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		63FEC30718F4002100A75883 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63FEC30818F4002100A75883 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		63FEC31D18F4002200A75883 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63FEC31E18F4002200A75883 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		63FEC32218F4002200A75883 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		63FEC32318F4002200A75883 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		63FEC32518F4002200A75883 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CameraApp/CameraApp-Prefix.pch";
+				INFOPLIST_FILE = "CameraApp/CameraApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		63FEC32618F4002200A75883 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CameraApp/CameraApp-Prefix.pch";
+				INFOPLIST_FILE = "CameraApp/CameraApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		63FEC32818F4002200A75883 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CameraApp.app/CameraApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CameraApp/CameraApp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CameraAppTests/CameraAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		63FEC32918F4002200A75883 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CameraApp.app/CameraApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CameraApp/CameraApp-Prefix.pch";
+				INFOPLIST_FILE = "CameraAppTests/CameraAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		63FEC2ED18F4002100A75883 /* Build configuration list for PBXProject "CameraApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63FEC32218F4002200A75883 /* Debug */,
+				63FEC32318F4002200A75883 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63FEC32418F4002200A75883 /* Build configuration list for PBXNativeTarget "CameraApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63FEC32518F4002200A75883 /* Debug */,
+				63FEC32618F4002200A75883 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63FEC32718F4002200A75883 /* Build configuration list for PBXNativeTarget "CameraAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63FEC32818F4002200A75883 /* Debug */,
+				63FEC32918F4002200A75883 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 63FEC2EA18F4002100A75883 /* Project object */;
+}
