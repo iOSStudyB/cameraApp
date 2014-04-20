@@ -64,7 +64,7 @@ NSInteger countDown;
     
     // TODO カメラが利用できるか、ライブラリが利用できるかをチェックして、表示するメニューを変える
     
-    UIActionSheet *sheet = [[UIActionSheet alloc] initWithTitle:@"title" delegate:self cancelButtonTitle:@"cancel"               destructiveButtonTitle:nil otherButtonTitles:@"camera",@"choose from library",@"editable camera",nil];
+    UIActionSheet *sheet = [[UIActionSheet alloc] initWithTitle:@"title" delegate:self cancelButtonTitle:@"cancel"               destructiveButtonTitle:nil otherButtonTitles:@"camera", @"choose from library", nil];
     [sheet showInView:self.view];
     
 }
@@ -149,10 +149,6 @@ NSInteger countDown;
             // フォトライブラリから画像を選ぶ
             [self presentViewController:imagePicker animated:YES completion:nil];
         }
-    }else if (buttonIndex == 2){
-        DLCImagePickerController *picker = [[DLCImagePickerController alloc] init];
-        picker.delegate = self;
-        [self.navigationController presentViewController:picker animated:TRUE completion:nil];
     }
 }
 
@@ -180,23 +176,5 @@ NSInteger countDown;
     // 最初の画面に戻る
     [self dismissViewControllerAnimated:YES completion:nil];
 }
-
-//// ★下記のメソッドがうまく実装できな。。。★
-//// 編集可能カメラ（DLCImagePickerController）を使った場合
-//- (void)imagePickerController:(DLCImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
-//{
-//    // 画像データは info[@"data"] にNSDataオブジェクトとして格納されている
-//    UIImage *image = [UIImage imageWithData:info[@"data"]];
-//    
-//    // UIImagePickerControllerも併用するのであればUIImagePickerControllerOriginalImage等にフォールバックする
-//    if (!image) {
-//        image = [info objectForKey:UIImagePickerControllerOriginalImage];
-//    }
-//    
-//    _imageView.image = image;
-//    tempEditedImage = image;
-//    // 最初の画面に戻る
-//    [self dismissViewControllerAnimated:YES completion:nil];
-//}
 
 @end
