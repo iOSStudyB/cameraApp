@@ -12,9 +12,9 @@
 #include "MBProgressHUD.h"
 #include <DLCImagePickerController.h>
 
-@interface BCAMessageEditViewController : UIViewController<UINavigationControllerDelegate, UIImagePickerControllerDelegate, UIActionSheetDelegate, DLCImagePickerDelegate>
+@interface BCAMessageEditViewController : UIViewController<UINavigationControllerDelegate, UIImagePickerControllerDelegate, UIActionSheetDelegate, DLCImagePickerDelegate, UICollectionViewDataSource, UICollectionViewDelegate>
 
-@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UICollectionView *imageCollectionView;
 - (IBAction)touchCancelItem:(UIBarButtonItem *)sender;
 - (IBAction)touchCameraItem:(UIBarButtonItem *)sender;
 - (IBAction)touchSaveItem:(UIBarButtonItem *)sender;
