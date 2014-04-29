@@ -15,7 +15,8 @@
 
 @implementation BCAMessageEditViewController
 {
-    UIImage *tempEditedImage;
+    // エディット済み画像を保存するまでの間格納しておく
+    NSMutableArray *tempEditedImages;
 }
 
 NSInteger countDown;
@@ -33,6 +34,10 @@ NSInteger countDown;
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    tempEditedImages = [[NSMutableArray alloc] init];
+    [_imageCollectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"cellIdentifier"];
+    [_imageCollectionView setBackgroundColor:[UIColor whiteColor]];
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -71,8 +76,10 @@ NSInteger countDown;
 
 - (IBAction)touchSaveItem:(UIBarButtonItem *)sender {
     // 編集済み画像をカメラロールに保存する
-    if (tempEditedImage != nil) {
-        UIImageWriteToSavedPhotosAlbum(tempEditedImage, nil, nil, nil);
+    if ([tempEditedImages count] != 0) {
+        for (UIImage *tempImage in tempEditedImages) {
+            UIImageWriteToSavedPhotosAlbum(tempImage, nil, nil, nil);
+        }
     }
 
     MBProgressHUD*	hud	= [MBProgressHUD showHUDAddedTo:self.view animated:YES];
@@ -161,17 +168,32 @@ NSInteger countDown;
 {
     // 編集済み画像
     UIImage *editedImage = (UIImage *)[info objectForKey:UIImagePickerControllerEditedImage];
-    // 最初の画面のイメージビューに編集済み画像を表示する
-    // 可能であればtext view への埋め込み
-    // 参考: http://blog.koogawa.com/entry/2013/12/24/202247
-    CGRect exclusionRect = CGRectMake(20, 145, _imageView.frame.size.width, _imageView.frame.size.height);
-    UIBezierPath *path = [UIBezierPath bezierPathWithRect:exclusionRect];
-    // テキストビューに設定
-    _textView.textContainer.exclusionPaths = @[path];
-    _imageView.image = editedImage;
-    tempEditedImage = editedImage;
+    [tempEditedImages addObject: editedImage];
+    // サムネイルを再描画する
+    [_imageCollectionView reloadData];
+    
     // 最初の画面に戻る
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (UIImage *) createThumbnailImage:(UIImage *)editedImage
+{
+    int imageW = editedImage.size.width;
+    int imageH = editedImage.size.height;
+    
+    // リサイズする倍率を作成する。縦横で長い方が80pixcelになるように倍率を求める
+    float scale = (imageW > imageH ? 80.0f/imageW : 80.0f/imageH);
+    
+    // 比率に合わせてリサイズする。
+    // ポイントはUIGraphicsXXとdrawInRectを用いて、リサイズ後のサイズで、
+    // aImageを書き出し、書き出した画像を取得することで、
+    // リサイズ後の画像を取得します。
+    CGSize resizedSize = CGSizeMake(imageW * scale, imageH * scale);
+    UIGraphicsBeginImageContext(resizedSize);
+    [editedImage drawInRect:CGRectMake(0, 0, resizedSize.width, resizedSize.height)];
+    UIImage* resizedImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return resizedImage;
 }
 
 //「Cancel」ボタンのデリゲートメソッド
@@ -198,5 +220,27 @@ NSInteger countDown;
 //    // 最初の画面に戻る
 //    [self dismissViewControllerAnimated:YES completion:nil];
 //}
+
+
+#pragma mark -  UICollectionViewDelegate
+
+- (NSInteger) numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
+    // セクションは常に１つ
+    return 1;
+}
+- (NSInteger) collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    // エディット済み画像の配列の長さ
+    return [tempEditedImages count];
+}
+
+- (UICollectionViewCell *) collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cellIdentifier" forIndexPath:indexPath];
+    UIImage *image = [tempEditedImages objectAtIndex:indexPath.row];
+    NSLog(@"subview count %d", [cell.subviews count]);
+    // 使いまわした前回のcellのsubviewに張り付いていた画像が残るため一度subviewをクリアする
+    [cell.subviews[0] removeFromSuperview];
+    [cell addSubview:(UIView *) [[UIImageView alloc] initWithImage:[self createThumbnailImage:image]]];
+    return cell;
+}
 
 @end
